@@ -5,15 +5,19 @@ body{
     scroll-behavior: smooth;
 }
 
+body::marker{
+    background-color: blueviolet;
+}
+
 nav {
     padding: 20px;
     height: 100dvh;
     background-image:url(bg1.jpg) ;
     background-position:center right;
     background-size: cover;
+    
     background-attachment: fixed;
 }
-
 
 
 .logo{
@@ -28,21 +32,28 @@ nav {
 
 
 
-.nav-list{
-    
+.nav-list {
+    justify-content: space-between;
     list-style-type: none;
     display: flex;
     gap: 20px;
-    margin: 20px auto;
-    margin-left: 42rem;
-    font-size: 20px;
+    flex-direction: right;
+    font-size: 15px;
     font-weight: 600;
+    margin-left: 45rem;
 }
+
 
 .nav-list a{
     text-decoration: none;
+    color: rgba(244, 246, 247, 0.945);
+}
+
+li a:active{
+    background-color: white;
+}
+.nav-list a:hover{
     color: white;
-  
 }
 
 .header{
@@ -142,3 +153,196 @@ nav {
     font-size: 20px;
     color: grey;
 }
+
+.hm-pro{
+    background-color: black;
+    color: white;
+    height: 90dvh;
+}
+
+.hm-pro-box{
+    display: flex;
+    margin: 30px;
+    
+}
+
+.hm-pro-left{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-flow: row  wrap;
+    gap: 40px;
+    margin: 70px;
+    height: 100%;
+    
+}
+
+.pro-box{
+    width: 130px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.hm-pro-right{
+    background-color: white;
+}
+
+.hm-pro-right img{
+    
+    width:600px ;
+    height: 90dvh;
+   
+}
+
+.hm-pro2{
+    background-color: black;
+}
+
+.hm-pro2-box{
+    display: flex;
+}
+
+.hm-pro1-left img{
+    width: 720px;
+    height: 100%;
+}
+
+.hm-pro2-right{
+    background-color: black;
+    color: white;
+    /* padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 20px; */
+
+    padding:70px 55px 20px 55px ;
+}
+
+.hm-pro2-right h1{
+    font-size: 2.8rem;
+}
+
+.hm-pro2-right p{
+    font-size: 20px;
+}
+
+
+.don-mov{
+    margin-top:10px ;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color:violet;
+    color: rgb(233, 228, 228);
+    border: none;
+}
+
+.don-mov:hover{
+    background-color: white;
+    color: black;
+}
+
+.hm-sit{
+    height: 90dvh;
+    margin-top: 120px;
+    position: sticky;
+    z-index: -3;
+    
+}
+
+.hm-sit-box{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:10rem ;
+}
+
+.hm-sit-det{
+    margin: 75px;
+    width: 350px;
+}
+
+.hm-sit-det h1{
+    font-size: 25px;
+    font-weight:900;
+}
+
+.hm-sit-det span{
+    font-size: 12px;
+}
+
+.hm-sit-det p{
+    font-size: 16px;
+    color: gray;
+}
+
+.hm-dig{
+    background-color: rgb(98, 212, 247);
+    height: 90vh;
+}
+
+.hm-digi-box{
+    text-align: center;
+    padding-top: 200px;
+}
+
+.hm-digi-box h1 {
+    margin-left: 50px;
+    margin-right: 50px;
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.hm-digi-box p{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    height: 80dvh;
+    position:sticky;
+    z-index: -2;
+}
+
+.footer-box{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 90px;
+    justify-content:space-evenly;
+}
+
+
+.foo-con{
+    line-height: 2.5rem;
+    text-align: left;
+}
+
+
+
+.foo-con ul{
+    margin: 0;
+    
+    
+}
+
+.foot-li li{
+    list-style-type: none;
+    color: gray;
+    margin: 0;
+}
+
+.foot-li a{
+    text-decoration: none;
+    color: grey;
+}
+
+
+
+
+
+
+
+
+
+

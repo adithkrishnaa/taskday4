@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+
+body::marker{
+    background-color: blueviolet;
+}
+
+
+
+
+.logo{
+    
+    width: 50%;
+    
+}
+
+.navbar{
+    display: flex;
+    position: fixed;
+    padding: 30px;
+}
+
+.nav-list {
+    justify-content: space-between;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    flex-direction: right;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-left: 50rem;
+}
+
+
+.nav-list a{
+    text-decoration: none;
+    color: rgba(244, 246, 247, 0.945);
+}
+
+
+.nav-list a:hover{
+    color: white;
+}
+
+.ab-ses1{
+    display: flex;
+}
+  .bg-boy{
+    background-image: url(movedo-img-04.jpg);
+    background-size: cover;
+    background-position:center;
+    width: 60%;
+    height: 110dvh;
+  }
+
+.about-text{
+    background-color: black;
+    color:white;
+    width: 50%;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.about-text h1{
+    font-weight: 800;
+    font-size: 4.5rem;
+}
+
+.about-text h5{
+    font-size: 30px;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.about-text p{
+    font-size: 20px;
+}
+
+
+.abt-text{
+    width: 90%;
+    padding: 57.5px;
+    
+}
+
+.abt-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.abt-text h1{
+    font-size: 80px;
+}
+
+.abt-st{
+    color: blueviolet;
+}
+
+.abt-p{
+    font-size: 20px;
+    width: 50%;
+    color: gray;
+}
+
+.abt-it{
+    font-size: 30px;
+    color: rgb(148, 148, 148);
+    font-style: italic;
+    font-weight: 200;
+}
+
+
+.abt-bnt{
+    margin-top: 20px;
+    border: none;
+    background-color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.abt-bnt:hover{
+    border-bottom: 3px solid violet;
+}
+
+.abt-bg-cm{
+    background-image: url(movedo-img-07.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.abt-icon{
+    border: 1px solid;
+    width: 100%;
+    height: 100px;
+    
+    background-color: rgb(255, 141, 106);
+}
+
+/* footer */
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    height: 80dvh;
+    position:sticky;
+    z-index: -2;
+}
+
+.footer-box{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 90px;
+    justify-content:space-evenly;
+}
+
+
+.foo-con{
+    line-height: 2.5rem;
+    text-align: left;
+}
+
+
+
+.foo-con ul{
+    margin: 0;
+    
+    
+}
+
+.foot-li li{
+    list-style-type: none;
+    color: gray;
+    margin: 0;
+}
+
+.foot-li a{
+    text-decoration: none;
+    color: grey;
+}
