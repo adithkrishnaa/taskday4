@@ -1,0 +1,219 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+
+::selection{
+    background-color: blueviolet;
+}
+
+nav {
+    padding: 20px;
+    height: 100dvh;
+    background-image: url(movedo-feature-02-1920x1088.jpg) ;
+    background-position:center right;
+    background-size: cover;
+}
+
+
+.logo{
+    width: 50%;
+    
+}
+
+.navbar{
+    display: flex;
+    position: fixed;
+}
+
+
+
+.nav-list {
+    justify-content: space-between;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    flex-direction: right;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 45rem;
+}
+
+
+.nav-list a{
+    text-decoration: none;
+    color: rgba(244, 246, 247, 0.945);
+}
+
+li a:active{
+    background-color: white;
+}
+.nav-list a:hover{
+    color: white;
+}
+
+.header {
+    padding: 90px;
+    color: white;
+}
+
+
+.header-he{
+    font-size: 3.5rem;
+    font-weight: bolder;
+   
+}
+
+.osr-box{
+    display: flex;
+}
+
+.osr-page span{
+    font-size: 20px;
+    color: blueviolet;
+}
+
+.osr-page h1{
+    font-size: 20px;
+}
+
+.osr-page p{
+    width:95% ;
+    font-size:  18px;
+}
+
+.service-content {
+    margin: 60px;
+}
+
+.service-content h1{
+    font-size: 45px;
+}
+.content{
+    display: flex;
+    gap: 30px;
+}
+
+.ors-text img{
+    width: 400px;
+}
+
+.ors-text h1{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.ors-text p{
+    font-size: 19px;
+    color: gray;
+}
+
+.howitworks{
+    display: flex;
+}
+
+.ors-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.ors_text{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 80px;
+}
+
+.ors_text h1{
+    font-size: 55px;
+}
+
+.ors_text p{
+    font-size: 18px;
+}
+
+.ors_bnt{
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 13px;
+    font-weight: 800;
+    background-color: rgba(18, 236, 236, 0.836);
+    color: rgb(253, 253, 253);
+    border: none;
+}
+
+.ors_bnt:hover{
+    background-color: rgb(219, 219, 219);
+    color: black;
+}
+
+.ors_box{
+    display: flex;
+    height: 50vh;
+}
+
+.ors_item{
+    padding: 60px;
+    background-color: rgba(163, 73, 248, 0.603)
+}
+
+.ors_item span{
+    font-size: 12px;
+}
+
+.ors_item h1{
+    color: rgb(230, 224, 224);
+    font-size: 30px;
+}
+
+.ors_item p{
+    color: white;
+    font-size: 18px;
+}
+
+
+/* footer */
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    height: 80dvh;
+    position:sticky;
+    z-index: -2;
+}
+
+.footer-box{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 90px;
+    justify-content:space-evenly;
+}
+
+
+.foo-con{
+    line-height: 2.5rem;
+    text-align: left;
+}
+
+
+
+.foo-con ul{
+    margin: 0;
+    
+    
+}
+
+.foot-li li{
+    list-style-type: none;
+    color: gray;
+    margin: 0;
+}
+
+.foot-li a{
+    text-decoration: none;
+    color: grey;
+}

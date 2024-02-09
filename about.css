@@ -5,7 +5,7 @@ body{
     scroll-behavior: smooth;
 }
 
-body::marker{
+::selection{
     background-color: blueviolet;
 }
 
@@ -90,7 +90,7 @@ body::marker{
 
 .abt-box{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .abt-text h1{
