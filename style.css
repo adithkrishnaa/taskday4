@@ -1,7 +1,7 @@
-body{
+ body{
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Times New Roman', Times, serif;
     scroll-behavior: smooth;
 }
 
@@ -15,7 +15,6 @@ nav {
     background-image:url(bg1.jpg) ;
     background-position:center right;
     background-size: cover;
-    
     background-attachment: fixed;
 }
 
@@ -43,13 +42,36 @@ nav {
     margin-left: 45rem;
 }
 
+.nav-list li  a:focus{
+    display: block;
+background-color: black;
+width: 100%;
+height: 100%;
+transition: a11 1s ease-out;
+animation-name:slide ;
+z-index: -1;
+}
+
+
+@keyframes slide {
+    from{
+       
+        transform:translateX(-10px)
+    }
+    to{
+        transform: translateX(150px)
+        
+    }
+}
+
+
 
 .nav-list a{
     text-decoration: none;
-    color: rgba(244, 246, 247, 0.945);
+    color: rgba(211, 211, 211, 0.945);
 }
 
-li a:active{
+.nav-list li a:active{
     background-color: white;
 }
 .nav-list a:hover{
@@ -66,6 +88,7 @@ li a:active{
 }
 
 .header h1{
+    font-family: sans-serif;
     padding: 30px 0;
     color: white;
     font-size: 8rem;
@@ -78,6 +101,9 @@ li a:active{
     font-weight: 700;
     color: aqua;
 }
+
+
+
 
 .home2{
     display: flex;
@@ -108,7 +134,7 @@ li a:active{
     font-size: 21px; 
 }
 
-.hm-right-bnt{
+.hm-right-bnt button{
     margin-top: 35px;
     padding: 10px;
     border: none;
@@ -116,7 +142,41 @@ li a:active{
     color: rgb(236, 74, 236);
     font-weight: 800;
     cursor: pointer;
+    position: relative;
 }
+
+
+.hm-right-bnt button::before {
+    content: '';
+    position: absolute;
+   
+    border-bottom: 2px solid #db34bf;
+    transition: transform 0.5s ease-out;
+    z-index: -1;
+  }
+
+
+
+.hm-right-bnt button:hover::before{
+    transform: scaleX(1);
+    /* position: relative;
+    
+    border-bottom: 2px solid rgb(236, 74, 236);
+    animation-name:bnt ;
+    transition: linear;
+    transition: all 2s;
+    animation-duration: 2s; */
+}
+
+@keyframes bnt {
+    from{
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(10px);
+    }
+}
+
 
 .hm-service{
     height: 70dvh;
@@ -210,11 +270,11 @@ li a:active{
 .hm-pro2-right{
     background-color: black;
     color: white;
-    /* padding-left: 55px;
+    padding-left: 55px;
     padding-right: 55px;
-    padding-top: 20px; */
+    padding-top: 20px;
 
-    padding:70px 55px 20px 55px ;
+   
 }
 
 .hm-pro2-right h1{
@@ -227,6 +287,7 @@ li a:active{
 
 
 .don-mov{
+    cursor: pointer;
     margin-top:10px ;
     padding: 15px;
     font-size: 15px;
@@ -277,6 +338,8 @@ li a:active{
 .hm-dig{
     background-color: rgb(98, 212, 247);
     height: 90vh;
+    z-index: -2;
+    position: relative;
 }
 
 .hm-digi-box{
@@ -301,8 +364,9 @@ footer{
     background-color: black;
     color: white;
     height: 80dvh;
-    position:sticky;
-    z-index: -2;
+    
+    z-index: 0;
+    position: sticky;
 }
 
 .footer-box{
@@ -330,11 +394,13 @@ footer{
     list-style-type: none;
     color: gray;
     margin: 0;
+    cursor: pointer;
 }
 
 .foot-li a{
     text-decoration: none;
     color: grey;
+    cursor: pointer;
 }
 
 

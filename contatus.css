@@ -167,6 +167,13 @@ li a:active{
  color: rgb(185, 183, 183);
 }
 
+.cf-form input:focus
+.cf-form input:hover{
+    border: none;
+    list-style: none;
+    text-decoration: none;
+}
+
 .cf-form button{
     padding: 20px;
     cursor: pointer;
@@ -211,7 +218,6 @@ footer{
 
 .foo-con ul{
     margin: 0;
-    
     
 }
 
