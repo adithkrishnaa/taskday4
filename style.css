@@ -42,27 +42,16 @@ nav {
     margin-left: 45rem;
 }
 
-.nav-list li  a:focus{
-    display: block;
-background-color: black;
-width: 100%;
-height: 100%;
-transition: a11 1s ease-out;
-animation-name:slide ;
-z-index: -1;
+.nav-list a::before{
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
 }
 
 
-@keyframes slide {
-    from{
-       
-        transform:translateX(-10px)
-    }
-    to{
-        transform: translateX(150px)
-        
-    }
-}
 
 
 
@@ -134,7 +123,7 @@ z-index: -1;
     font-size: 21px; 
 }
 
-.hm-right-bnt button{
+.hm-right-bnt {
     margin-top: 35px;
     padding: 10px;
     border: none;
@@ -146,36 +135,26 @@ z-index: -1;
 }
 
 
-.hm-right-bnt button::before {
-    content: '';
+.hm-right-bnt::before {
+    content: "";
     position: absolute;
-   
-    border-bottom: 2px solid #db34bf;
-    transition: transform 0.5s ease-out;
-    z-index: -1;
-  }
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: var(--border-size);
+    border-bottom: 2px solid;
+    background-color: var(--accent-color);
+    transition: transform  .5s ease-in-out , opacity .2s linear ;
+    transform: scaleX(0);
+    transform-origin: left;
+}
 
-
-
-.hm-right-bnt button:hover::before{
+.hm-right-bnt:hover::before,
+.hm-right-bnt:focus:before {
     transform: scaleX(1);
-    /* position: relative;
-    
-    border-bottom: 2px solid rgb(236, 74, 236);
-    animation-name:bnt ;
-    transition: linear;
-    transition: all 2s;
-    animation-duration: 2s; */
 }
 
-@keyframes bnt {
-    from{
-        transform: translateX(0px);
-    }
-    to {
-        transform: translateX(10px);
-    }
-}
+
 
 
 .hm-service{
