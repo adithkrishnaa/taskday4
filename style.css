@@ -10,10 +10,11 @@
 }
 
 nav {
-    padding: 20px;
+    top: 0;
+    margin: 0;
     height: 100dvh;
     background-image:url(bg1.jpg) ;
-    background-position:center right;
+    background-position:center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -21,39 +22,41 @@ nav {
 
 .logo{
     width: 50%;
+    padding: 8px;
+    display: flex;
+    flex-direction: left;
     
 }
 
 .navbar{
     display: flex;
+    justify-content: space-between;
     position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    top: 0;
 }
 
 
 
 .nav-list {
-    justify-content: space-between;
     list-style-type: none;
     display: flex;
+    padding: 8px;
     gap: 20px;
-    flex-direction: right;
     font-size: 15px;
+    justify-content: center;
+    align-items: center;
     font-weight: 600;
-    margin-left: 45rem;
 }
 
-.nav-list a::before{
-    content: "";
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+
+
+
+.bgcolor{
     background-color: black;
 }
-
-
-
-
 
 .nav-list a{
     text-decoration: none;
@@ -72,7 +75,7 @@ nav {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin:50px auto;
+    margin: 0 auto;
     
 }
 
@@ -117,10 +120,13 @@ nav {
     font-weight: 800;
 }
 
+
+
 .hm-right-clo{
     width: 80%;
     margin: 25px;
     font-size: 21px; 
+    color: rgb(192, 191, 191);
 }
 
 .hm-right-bnt {
@@ -343,7 +349,6 @@ footer{
     background-color: black;
     color: white;
     height: 80dvh;
-    
     z-index: 0;
     position: sticky;
 }
@@ -384,10 +389,150 @@ footer{
 
 
 
+@media only screen    (min-width:375 ) and (max-width:424px) {
+
+    nav{
+        
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo{
+        width: 35%;
+    }
+    .nav-list{
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+
+.header{
+    padding-top: 35%;
+    padding: auto;
+}
+
+    .header h1{
+        font-size: 50px;
+    }
+
+    .header p{
+        padding-top: 60px;
+        font-size: 15px;
+    }
+
+ 
+    .hm-flex{
+        font-size: 30px;
+        flex-direction: column;
+    }
+
+    .hm-left-clo{
+        margin: 0 auto;
+        font-family: sans-serif;
+        width: 100%;
+        font-size:18px ;
+    }
+
+    .hm-right-clo{
+      width: 100%;
+      margin: 0 auto;
+      font-family: sans-serif;
+      font-size: 17px;
+      margin-top: -20px;
+    }
+
+    .hm-service{
+        margin-top: -100px;
+        height: 135vh;
+        margin-bottom: 90px;
+    }
+    .srv-cont{
+        flex-direction: column;
+      
+    }
+
+ 
+    .hm-pro{
+        height: 130vh;
+    }
+
+    .hm-pro-box{
+        flex-direction: column;
+    }
+
+.hm-pro-left{
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+}
+
+.pro-box{
+    font-family: sans-serif;
+    width: 100%;
+}
+
+.pro-box{
+    font-size:15px ;
+}
+
+.hm-pro-right img{
+    display: none;
+}
 
 
+ .hm-pro2-box{
+    flex-direction: column;
+ }
+
+ .hm-pro1-left img{
+    width: 100%;
+ }
+
+ .hm-pro2-right{
+    height: 82vh;
+ }
+
+.hm-sit{
+margin: 0;
+padding: 0;
+height: 200vh;
+
+}
+ .hm-sit-box {
+ flex-direction: column;
+ padding: 0;
+ margin: 0;
+
+ }
+
+ .hm-dig{
+    height: 80vh;
+ }
+
+.hm-digi-box{
+    padding: 0;
+    padding-top:25%;
+}
+ .hm-digi-box h1{
+    font-family:'Times New Roman', Times, serif sans-serif;
+    font-size: 35px;
+ }
+
+ .footer{
+    height: 300vh;
+ }
+
+ .footer-box{
+    padding: 0;
+    flex-direction: column;
+    background-color: black;
+    
+ }
 
 
+.fot-bd {
+    margin-top: -10px;
+    background-color: black ;
+ }
 
-
-
+}

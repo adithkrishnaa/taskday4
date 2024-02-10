@@ -10,7 +10,7 @@ body{
 }
 
 nav {
-    padding: 20px;
+    
     height: 100dvh;
     background-image: url(movedo-feature-02-1920x1088.jpg) ;
     background-position:center right;
@@ -20,26 +20,42 @@ nav {
 
 .logo{
     width: 50%;
+    padding: 8px;
+    display: flex;
+    flex-direction: left;
     
 }
 
 .navbar{
     display: flex;
+    justify-content: space-between;
     position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    top: 0;
 }
 
 
 
 .nav-list {
-    justify-content: space-between;
     list-style-type: none;
     display: flex;
+    padding: 8px;
     gap: 20px;
-    flex-direction: right;
     font-size: 15px;
+    justify-content: center;
+    align-items: center;
     font-weight: 600;
-    margin-left: 45rem;
 }
+
+
+
+
+.bgcolor{
+    background-color: black;
+}
+
 
 
 .nav-list a{
