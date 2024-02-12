@@ -15,6 +15,7 @@ nav {
     height: 100dvh;
     background-image:url(bg1.jpg) ;
     background-position:center;
+    border-image: fill 0 linear-gradient(#0003,#000);
     background-size: cover;
     background-attachment: fixed;
 }
