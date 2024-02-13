@@ -19,6 +19,7 @@ nav {
     background-image: url(bg1.jpg) ;
     border-image:fill 0 linear-gradient(#0002, #000) ;
     background-position:center;
+    border-image: fill 0 linear-gradient(#0003,#000);
     background-size: cover;
     background-attachment: fixed;
     z-index: -1;
