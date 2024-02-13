@@ -408,6 +408,25 @@ footer{
     max-width: 90%;
 }
 
+
+@media only screen and (max-with:1440px) {
+   
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    nav{
+        height: 50vh;
+        padding: 0;
+    }
+
+    .header{
+        margin-top: 100%;
+    }
+    
+}
+
 @media only screen  and (max-width:960px) {
 
     nav{
