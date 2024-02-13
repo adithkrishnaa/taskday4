@@ -9,5 +9,4 @@ function bgcochange() {
     }
 }
 
-
 window.addEventListener('scroll',bgcochange);

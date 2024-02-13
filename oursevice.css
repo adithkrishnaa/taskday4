@@ -13,6 +13,7 @@ nav {
     
     height: 100dvh;
     background-image: url(movedo-feature-02-1920x1088.jpg) ;
+    border-image:fill 0 linear-gradient(#0003, #000) ;
     background-position:center right;
     background-size: cover;
 }

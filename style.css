@@ -1,7 +1,10 @@
- body{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap');
+
+
+
+body{
     margin: 0;
     padding: 0;
-    font-family:'Times New Roman', Times, serif;
     scroll-behavior: smooth;
 }
 
@@ -13,10 +16,13 @@ nav {
     top: 0;
     margin: 0;
     height: 100dvh;
-    background-image:url(bg1.jpg) ;
+    background-image: url(bg1.jpg) ;
+    border-image:fill 0 linear-gradient(#0002, #000) ;
     background-position:center;
     background-size: cover;
     background-attachment: fixed;
+    z-index: -1;
+   
 }
 
 
@@ -45,7 +51,8 @@ nav {
     display: flex;
     padding: 8px;
     gap: 20px;
-    font-size: 15px;
+    font-size: 13px;
+    padding-right: 30px;
     justify-content: center;
     align-items: center;
     font-weight: 600;
@@ -71,26 +78,25 @@ nav {
 }
 
 .header{
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: center;
     text-align: center;
     margin: 0 auto;
-    
+   
 }
 
 .header h1{
-    font-family: sans-serif;
-    padding: 30px 0;
+    padding: 80px 0;
     color: white;
-    font-size: 8rem;
+    font-size: 7rem;
     font-weight: 900;
 }
 
 .header p{
     margin-top: -150px;
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 28px;
+    font-family: sans-serif;
     color: aqua;
 }
 
@@ -114,7 +120,7 @@ nav {
 }
 
 .hm-left-clo{
-    width:  80%;
+    width: 200%;
     margin: 20px;
     font-size: 28px;
     font-weight: 800;
@@ -123,7 +129,7 @@ nav {
 
 
 .hm-right-clo{
-    width: 80%;
+    
     margin: 25px;
     font-size: 21px; 
     color: rgb(192, 191, 191);
@@ -200,43 +206,47 @@ nav {
 }
 
 .hm-pro{
-    background-color: black;
-    color: white;
-    height: 90dvh;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    height: 90vh;
 }
 
-.hm-pro-box{
-    display: flex;
-    margin: 30px;
-    
-}
 
 .hm-pro-left{
     background-color: black;
     color: white;
     display: flex;
-    flex-flow: row  wrap;
-    gap: 40px;
-    margin: 70px;
-    height: 100%;
-    
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding:35px;
+    gap: 5rem;
+    width: 100%;
 }
 
 .pro-box{
-    width: 130px;
     text-align: left;
-    font-size: 20px;
+    font-size: 15px;
+    width:25%;
+    
+}
+
+.pro-box p{
+    font-family: 'Open Sans';
 }
 
 .hm-pro-right{
-    background-color: white;
+    border: 1px solid none;
+    padding-right: 0;
+    margin-right: 0;
+    object-fit: fill;
+    max-width: 630px;
+    
 }
 
 .hm-pro-right img{
-    
-    width:600px ;
-    height: 90dvh;
-   
+ max-width: 630px;
+ height: 90vh;
 }
 
 .hm-pro2{
@@ -277,9 +287,10 @@ nav {
     padding: 15px;
     font-size: 15px;
     font-weight: 700;
-    background-color:violet;
+    background-color:rgb(255, 0, 255);
     color: rgb(233, 228, 228);
     border: none;
+    transition: all .5s;
 }
 
 .don-mov:hover{
@@ -329,7 +340,7 @@ nav {
 
 .hm-digi-box{
     text-align: center;
-    padding-top: 200px;
+    padding-top: 150px;
 }
 
 .hm-digi-box h1 {
@@ -387,9 +398,16 @@ footer{
     cursor: pointer;
 }
 
+.fot-bd{
+    justify-content: center;
+    align-items: center;
+}
 
+.fot-bd hr{
+    max-width: 90%;
+}
 
-@media only screen    (min-width:375 ) and (max-width:424px) {
+@media only screen  and (max-width:960px) {
 
     nav{
         
@@ -443,7 +461,7 @@ footer{
 
     .hm-service{
         margin-top: -100px;
-        height: 135vh;
+        height: 170vh;
         margin-bottom: 90px;
     }
     .srv-cont{
@@ -453,7 +471,7 @@ footer{
 
  
     .hm-pro{
-        height: 130vh;
+        height: 160vh;
     }
 
     .hm-pro-box{
@@ -489,7 +507,7 @@ footer{
  }
 
  .hm-pro2-right{
-    height: 82vh;
+    height: 95vh;
  }
 
 .hm-sit{
@@ -506,7 +524,12 @@ height: 200vh;
  }
 
  .hm-dig{
-    height: 80vh;
+    height: 90vh;
+ }
+
+ .hm-sit-det{
+    padding: 0;
+    margin: 40px;
  }
 
 .hm-digi-box{

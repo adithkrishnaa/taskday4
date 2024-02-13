@@ -13,6 +13,7 @@ nav {
    
     height: 50dvh;
     background-image: url(movedo-feature-03-1920x1154.jpg) ;
+    border-image:fill 0 linear-gradient(#0003, #000) ;
     background-position:center;
     background-size: cover;
 }
@@ -137,10 +138,37 @@ li a:active{
 
 
 .con-logo{
-    margin-top: -4px;
+    margin-top: -20px;
     height: 80vh;
     width: 94.3%;
     background-color: rgba(10, 9, 9, 0.795);
+}
+
+
+.con-logo ul{
+    padding-top: 30%;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.con-logo a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid;
+    border-radius: 100%;
+    padding: 25px;
+}
+
+.con-logo i{
+    font-size: 20px;
+    
+}
+
+.con-logo i:hover{
+    zoom: 1.1;
 }
 
 .cf-form{
