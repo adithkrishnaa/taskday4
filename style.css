@@ -406,7 +406,7 @@ footer{
 }
 
 
-@media all and (max-width:1024px) {
+@media all and (min-width:1024px) and (max-width:1440px) {
    
     body{
         margin: 0;
