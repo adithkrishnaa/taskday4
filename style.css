@@ -488,16 +488,16 @@ footer{
     }
 } 
 
-@media all  and (max-width:425px) {
+@media all and  (min-width:320px) and  ( max-width:426px) {
 
     nav{
-        height: 80vh;
+        height: 100vh;
         padding: 0;
         margin: 0;
     }
 
     .logo{
-        width: 35%;
+        width: 30px;
     }
     .nav-list{
         display: none;
@@ -515,7 +515,7 @@ footer{
     }
 
 .header{
-    padding-top: 50%;
+    padding-top: 30%;
     padding: auto;
 }
 
@@ -529,7 +529,7 @@ footer{
     }
  
     .home2{
-        height: 150vh;
+        height: 110vh;
     }
     .hm-flex{
         gap: 20px;
@@ -546,10 +546,7 @@ footer{
       width: 100%;
       margin: 0 auto;
       font-size: 15px;
-      
     }
-
- 
 
     .hm-service{
         height: 100%;
@@ -565,56 +562,64 @@ footer{
 
  
     .hm-pro{
-        height: 100vh;
+        position: static;
+     
+        height: 150%;
     }
 
 
 
-.hm-pro-left {
-    height: 100vh;
+    .hm-pro-left {
+    height: 100%;
     position: static;
     flex-wrap: nowrap;
     flex-direction: column;
     overflow: visible;
-    padding-bottom: 100px;
-}
 
-.pro-box{
+    }
+
+    .pro-box{
+        position: static;
     font-size:15px ;
     width: 100%;
-}
+     }
 
 .hm-pro-right img{
     display: none;
 }
 
+.hm-pro2{
+    height: 100%;
+}
 
  .hm-pro2-box{
     flex-direction: column;
+    padding-bottom: 10px;
+    margin: 0;
+    height: 100%;
  }
 
 
- .hm-pro2-right{
-    position: static;
-    width: 50%;
-    padding: 0;
-    padding-bottom: 0px;
-    height: 80vh;
+ .hm-pro2-right {
+    height: 60vh;
+    width: 90%;
+   padding: 0;
+   margin: 0 auto;
  }
 
   .hm-pro2-right h1{
     font-size: 29px;
-    width: 60%;
+    padding: 0;
   }
 
  .hm-pro2-right p{
-    width: 60%;
+    
     font-size: 15px;
+    padding: 0;
  }
 
 .hm-sit{
-height: 100dvh;
-margin-top: 45%;
+height: 100%;
 margin-bottom: 10%;
 
 }
@@ -626,30 +631,39 @@ margin-bottom: 10%;
  }
 
  .hm-sit-det{
-   
-    width: 30%;
+    width: 100%;
 }
 
  .hm-dig{
     height: 80dvh;
+    width: 100%;
  }
 
 
 
 .hm-digi-box{
-    padding-top: 10%;
-   
+    padding: 0;
+    padding-top: 20%;
+   margin: 0;
 }
  .hm-digi-box h1{
-    font-size: 40px;
+    font-size: 30px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
  }
 
-
+footer{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
 
  .footer-box{
     padding: 0;
-    column-gap:80px ;
-    flex-wrap: wrap;
+    height: 100%;
+    flex-direction: column;
     background-color: black;
  }
 
@@ -666,8 +680,7 @@ margin-bottom: 10%;
 
 }
 
-
-@media all  and (max-width:768px) {
+@media all   and (min-width:427px) and (max-width:768px) {
 
     nav{
         
