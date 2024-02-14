@@ -16,13 +16,12 @@ nav {
     top: 0;
     margin: 0;
     height: 100dvh;
-    background-image: url(bg1.jpg) ;
-    border-image:fill 0 linear-gradient(#0002, #000) ;
+    border: none;
+    background:linear-gradient(to bottom,rgba(0,0,0,.5),rgba(0,0,0,0.9)), url(bg1.jpg) ;
     background-position:center;
-    border-image: fill 0 linear-gradient(#0003,#000);
     background-size: cover;
     background-attachment: fixed;
-    z-index: -1;
+   
    
 }
 
@@ -108,7 +107,7 @@ nav {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    height: 80vh;
+    height: 60vh;
     background-color: black;
     color: white;
 }
@@ -163,7 +162,7 @@ nav {
 }
 
 .hm-right-bnt:hover::before,
-.hm-right-bnt:focus:before {
+.hm-right-bnt:focus::before {
     transform: scaleX(1);
 }
 
@@ -171,7 +170,7 @@ nav {
 
 
 .hm-service{
-    height: 70dvh;
+    height: 50dvh;
 }
 
 .srv-cont{
@@ -210,7 +209,7 @@ nav {
     display: flex;
     margin: 0 auto;
     width: 100%;
-    height: 90vh;
+    height: 60vh;
 }
 
 
@@ -220,15 +219,15 @@ nav {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding:35px;
-    gap: 5rem;
-    width: 100%;
+    padding:40px;
+    gap: 4rem;
+    width: 44.5%;
 }
 
 .pro-box{
     text-align: left;
     font-size: 15px;
-    width:25%;
+    width:20%;
     
 }
 
@@ -241,12 +240,12 @@ nav {
     padding-right: 0;
     margin-right: 0;
     object-fit: fill;
-    max-width: 630px;
+    max-width: 680px;
     
 }
 
 .hm-pro-right img{
- max-width: 630px;
+ max-width: 650px;
  height: 90vh;
 }
 
@@ -300,10 +299,9 @@ nav {
 }
 
 .hm-sit{
-    height: 90dvh;
+    height: 60dvh;
     margin-top: 120px;
-    position: sticky;
-    z-index: -3;
+ 
     
 }
 
@@ -333,10 +331,8 @@ nav {
 }
 
 .hm-dig{
-    background-color: rgb(98, 212, 247);
-    height: 90vh;
-    z-index: -2;
-    position: relative;
+    background-color: rgb(49, 200, 247);
+    height: 60vh;
 }
 
 .hm-digi-box{
@@ -345,8 +341,8 @@ nav {
 }
 
 .hm-digi-box h1 {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
     color: white;
     font-size: 3.5rem;
     font-weight: 300;
@@ -360,9 +356,10 @@ nav {
 footer{
     background-color: black;
     color: white;
-    height: 80dvh;
+    height: 50dvh;
     z-index: 0;
-    position: sticky;
+    position: relative;
+    bottom: 0;
 }
 
 .footer-box{
@@ -409,7 +406,7 @@ footer{
 }
 
 
-@media only screen and (max-with:1440px) {
+@media all and (max-width:1024px) {
    
     body{
         margin: 0;
@@ -417,17 +414,260 @@ footer{
     }
 
     nav{
-        height: 50vh;
+        height: 100dvh;
         padding: 0;
     }
 
-    .header{
-        margin-top: 100%;
+    .home2{
+        height: 100vh;
+    }
+
+    .hm-service{
+        height: 100vh;
+    }
+
+
+
+    .hm-pro{
+        height: 98vh;
     }
     
+    .hm-pro-left{
+        width: 100%;
+    }
+.hm-pro-right img{
+        width: 100% !important;
+        height: 100%;
+    }
+
+    .hm-pro2{
+       height: 90vh;
+    }
+
+    .hm-pro2-box{
+        height: 90vh;
+    }
+
+    .hm-pro1-left{
+        width: 100%;
+        
+    }
+
+    .hm-pro1-left img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .hm-pro2-right{
+        width: 120%;
+    }
+
+    .hm-sit{
+        height: 100%;
+
+    }
+
+    .hm-sit-box{
+        flex-wrap: wrap;
+        margin-left: 5rem;
+    }
+    
+    .hm-sit-det{
+        margin: 50px;
+    }
+
+    .hm-dig{
+        height: 100dvh;
+    }
+    .hm-digi-box h1 {
+        font-size: 3rem;
+    }
+
+    footer{
+        height: 90dvh;
+    }
+} 
+
+@media all  and (max-width:425px) {
+
+    nav{
+        height: 80vh;
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo{
+        width: 35%;
+    }
+    .nav-list{
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .bgcolor{
+       display: none;
+       width: 50%;
+    }
+
+    .navbar{
+        width: 0%;
+    }
+
+.header{
+    padding-top: 50%;
+    padding: auto;
 }
 
-@media only screen  and (max-width:960px) {
+    .header h1{
+        font-size: 50px;
+    }
+
+    .header p{
+        padding-top: 60px;
+        font-size: 12px;
+    }
+ 
+    .home2{
+        height: 150vh;
+    }
+    .hm-flex{
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .hm-left-clo{
+        margin: 0 auto;
+        width: 100%;
+        font-size:25px ;
+    }
+
+    .hm-right-clo{
+      width: 100%;
+      margin: 0 auto;
+      font-size: 15px;
+      
+    }
+
+ 
+
+    .hm-service{
+        height: 100%;
+        margin-bottom: 90px;
+    }
+
+    .srv-cont{
+        flex-wrap: wrap;
+    }
+    .srv-box p{
+      font-size: 15px;
+    }
+
+ 
+    .hm-pro{
+        height: 100vh;
+    }
+
+
+
+.hm-pro-left {
+    height: 100vh;
+    position: static;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    overflow: visible;
+    padding-bottom: 100px;
+}
+
+.pro-box{
+    font-size:15px ;
+    width: 100%;
+}
+
+.hm-pro-right img{
+    display: none;
+}
+
+
+ .hm-pro2-box{
+    flex-direction: column;
+ }
+
+
+ .hm-pro2-right{
+    position: static;
+    width: 50%;
+    padding: 0;
+    padding-bottom: 0px;
+    height: 80vh;
+ }
+
+  .hm-pro2-right h1{
+    font-size: 29px;
+    width: 60%;
+  }
+
+ .hm-pro2-right p{
+    width: 60%;
+    font-size: 15px;
+ }
+
+.hm-sit{
+height: 100dvh;
+margin-top: 45%;
+margin-bottom: 10%;
+
+}
+ .hm-sit-box {
+ 
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    gap: 30px;
+ }
+
+ .hm-sit-det{
+   
+    width: 30%;
+}
+
+ .hm-dig{
+    height: 80dvh;
+ }
+
+
+
+.hm-digi-box{
+    padding-top: 10%;
+   
+}
+ .hm-digi-box h1{
+    font-size: 40px;
+ }
+
+
+
+ .footer-box{
+    padding: 0;
+    column-gap:80px ;
+    flex-wrap: wrap;
+    background-color: black;
+ }
+
+ .foo-con{
+    padding: 70px;
+ }
+
+
+.fot-bd {
+    margin-top: -10px;
+    padding-bottom: 10px;
+    background-color: black ;
+ }
+
+}
+
+
+@media all  and (max-width:768px) {
 
     nav{
         
@@ -444,8 +684,13 @@ footer{
         margin: 0;
     }
 
+    .bgcolor{
+       display: none;
+       width: 50%;
+    }
+
 .header{
-    padding-top: 35%;
+    padding-top: 3%;
     padding: auto;
 }
 
@@ -459,54 +704,47 @@ footer{
     }
 
  
+    .home2{
+        height: 80vh;
+    }
     .hm-flex{
-        font-size: 30px;
-        flex-direction: column;
+        gap: 20px;
+
     }
 
     .hm-left-clo{
         margin: 0 auto;
-        font-family: sans-serif;
         width: 100%;
-        font-size:18px ;
+        font-size:25px ;
     }
 
     .hm-right-clo{
       width: 100%;
       margin: 0 auto;
-      font-family: sans-serif;
-      font-size: 17px;
-      margin-top: -20px;
+      font-size: 15px;
+      
     }
 
     .hm-service{
         margin-top: -100px;
-        height: 170vh;
+        height: 100%;
         margin-bottom: 90px;
     }
-    .srv-cont{
-        flex-direction: column;
-      
+    .srv-box p{
+      font-size: 15px;
     }
 
  
     .hm-pro{
-        height: 160vh;
+        height: 100%;
+
     }
 
-    .hm-pro-box{
-        flex-direction: column;
-    }
+
 
 .hm-pro-left{
-    flex-direction: column;
-    width: 100%;
-    margin: 0;
-}
-
-.pro-box{
-    font-family: sans-serif;
-    width: 100%;
+    height: 80vh;
+    margin: 0 auto ;
 }
 
 .pro-box{
@@ -527,54 +765,71 @@ footer{
  }
 
  .hm-pro2-right{
-    height: 95vh;
+    width: 100%;
+    padding: 80px;
+    padding-bottom: 40px;
+    height: 100vh;
+ }
+
+  .hm-pro2-right h1{
+    font-size: 29px;
+    width: 60%;
+  }
+
+ .hm-pro2-right p{
+    width: 60%;
+    font-size: 15px;
  }
 
 .hm-sit{
-margin: 0;
-padding: 0;
-height: 200vh;
+height: 100dvh;
+margin-top: 45%;
+margin-bottom: 10%;
 
 }
  .hm-sit-box {
- flex-direction: column;
- padding: 0;
- margin: 0;
-
- }
-
- .hm-dig{
-    height: 90vh;
+ 
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    gap: 30px;
  }
 
  .hm-sit-det{
-    padding: 0;
-    margin: 40px;
+   
+    width: 30%;
+}
+
+ .hm-dig{
+    height: 80dvh;
  }
+
+
 
 .hm-digi-box{
-    padding: 0;
-    padding-top:25%;
+    padding-top: 10%;
+   
 }
  .hm-digi-box h1{
-    font-family:'Times New Roman', Times, serif sans-serif;
-    font-size: 35px;
+    font-size: 40px;
  }
 
- .footer{
-    height: 300vh;
- }
+
 
  .footer-box{
     padding: 0;
-    flex-direction: column;
+    column-gap:80px ;
+    flex-wrap: wrap;
     background-color: black;
-    
+ }
+
+ .foo-con{
+    padding: 70px;
  }
 
 
 .fot-bd {
     margin-top: -10px;
+    padding-bottom: 10px;
     background-color: black ;
  }
 
