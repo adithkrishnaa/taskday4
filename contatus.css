@@ -12,9 +12,10 @@ body{
 nav {
    
     height: 50dvh;
-    background-image: url(movedo-feature-03-1920x1154.jpg) ;
+    background-image:linear-gradient(to bottom,rgba(0,0,0,.6),rgba(0,0,0,0.9)), url(movedo-feature-03-1920x1154.jpg) ;
     background-position:center;
     background-size: cover;
+    
 }
 
 
@@ -117,7 +118,6 @@ li a:active{
 }
 
 .hm-pro-right img{
-    
     width:600px ;
     height: 90dvh;
    
@@ -125,14 +125,12 @@ li a:active{
 
 .contact-form{
     display: flex;
-   
 }
-
 
 
 .con-img img{
     width: 94.3%;
-    aspect-ratio:  4/2; 
+    aspect-ratio:4/2; 
 }
 
 
@@ -220,7 +218,7 @@ li a:active{
 .cf-form button{
     padding: 20px;
     cursor: pointer;
-    background-color: rgba(170, 100, 236, 0.76);
+    background-color: rgba(162, 64, 253, 0.76);
     color: white;
     font-size: 13px;
     border: none;
@@ -273,4 +271,88 @@ footer{
 .foot-li a{
     text-decoration: none;
     color: grey;
+}
+
+
+@media all and (max-width:1024px){
+    nav{
+        height: 60vh;
+    }
+
+    .hm-pro{
+        height: 100%;
+    }
+
+    .hm-pro-box{
+        margin-bottom: 0;
+    }
+
+    .pro-box {
+        width: 30%;
+    }
+
+    .pro-box h1{
+        font-size: 18px;
+    }
+
+    .pro-box p{
+        font-size: 15px;
+        width: 70%;
+    }
+    
+    .hm-pro-left{
+        gap: 20px;
+        margin: 50px auto;
+    }
+
+    .hm-pro-right img{
+        display: none;
+    }
+    
+    .cf-form{
+        height: 100%;
+        padding: 0;
+        width: 100%;
+    }
+
+    .cf-form h1{
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .cf-form input{
+        padding-right: 0;
+        width: 90%;
+    }
+
+    .cf-form textarea{
+        padding-right: 0;
+        width: 90%;
+    }
+
+    footer{
+        height: 90dvh;
+    }
+
+}
+
+@media all and (max-width:768px) {
+    
+
+    .header-titel h1{
+        font-size: 3rem;
+    }
+
+    .contact-form{
+        flex-direction: column;
+    }
+
+    .con-img img{
+        width: 100%;
+    }
+
+    .con-logo{
+        width: 100%;
+    }
+    
 }

@@ -62,6 +62,11 @@ body{
     color: white;
 }
 
+
+.ab-back{
+    height: 100%;
+}
+
 .ab-ses1{
     display: flex;
 }
@@ -69,14 +74,21 @@ body{
     background-image: url(movedo-img-04.jpg);
     background-size: cover;
     background-position:center;
-    width: 60%;
-    height: 110dvh;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .about-text-box {
+    padding: 0;
+    margin: 0;
+    width: 50%;
   }
 
 .about-text{
     background-color: black;
     color:white;
-    width: 50%;
+    width: 40%;
     padding-top: 30px;
     padding-left: 60px;
     padding-right: 60px;
@@ -84,22 +96,22 @@ body{
 
 .about-text h1{
     font-weight: 800;
-    font-size: 4.5rem;
+    font-size: 2rem;
 }
 
 .about-text h5{
-    font-size: 30px;
+    font-size: 0px;
     font-weight: 200;
     font-style: italic;
 }
 
 .about-text p{
-    font-size: 20px;
+    font-size: 15px;
 }
 
 
 .abt-text{
-    width: 90%;
+    width: 100%;
     padding: 57.5px;
     
 }
@@ -144,9 +156,9 @@ body{
 }
 
 
-.abt-gb-right{
+/* .abt-gb-right{
     background-color: black;
-}
+} */
 
 .abt-bg-cm{
     background-image: url(movedo-img-07.jpg);
@@ -222,12 +234,8 @@ footer{
     text-align: left;
 }
 
-
-
 .foo-con ul{
     margin: 0;
-    
-    
 }
 
 .foot-li li{
@@ -349,7 +357,7 @@ footer{
     }
     
     .about{
-        height: 50vh;
+        height: 100%;
     }
     
     .abt-box{
@@ -358,7 +366,12 @@ footer{
     }
     
     .abt-text h1{
+        width: 100%;
         font-size: 80px;
+    }
+
+    .abt-p{
+        width: 100%;
     }
     
     .abt-st{
@@ -495,7 +508,7 @@ footer{
 }
 
 
-@media all and  (min-width:320px) and  ( max-width:426px) {
+@media all and  (min-width:320px) and  ( max-width:425px) {
 
     .nav-list{
         display: none;
@@ -503,21 +516,26 @@ footer{
 
     .ab-ses1{
         flex-direction: column;
-        
     }
 
+    .logo-a{
+        width: 50px;
+    }
+
+
     .bg-boy{
+        width: 100%;
+    }
+
+    .about-text-box{
         width: 100%;
     }
 
     .about-text{
         width: 90%;
         padding: 20px;
-        
         height: 100%;
     }
-
- 
 
     .about-text h1{
         font-size: 30px;
@@ -714,24 +732,63 @@ footer{
 
 @media all and (min-width:1024px) and (max-width:1440px) {
     .bg-boy{
-        width: 100vh;
-    }
-
-    .ab-back{
-        height: 100%;
+        height: 80vh;
     }
 
     .about-text-box{
-        width: 100%;
-        height: 100%;
+        width: 70%;
+        height: 80vh;
         background-color: black;
     }
 
     .about-text{
         width: 80%;
-        height: 100%;
-        padding-bottom: 1px;
-        
+        padding-bottom: 5px;
+    }
 
+    .about-text h1{
+        font-size: 3rem;
+    }
+
+    .about-text h5{
+        font-size: 12px;
+    }
+
+    .about-text p{
+        font-size: 15px;
+    }
+
+    .abt-box{
+        margin: 0;
+        height: 100% !important;
+    }
+
+    .abt-text{
+        margin: 0;
+        width: 65%;
+        height: 100%;
+    }
+
+    .abt-p{
+        width: 100%;
+    }
+
+    .abt-gb-right{
+        width: 100%;
+    }
+
+    .abt-bg-cm{
+        width: 100%;
+        height: 70%;
+    }
+
+    .abt-icon{
+        width: 100%;
+        height: 20px;
+    }
+
+
+    footer{
+        height: 90dvh;
     }
 }

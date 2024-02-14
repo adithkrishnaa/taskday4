@@ -10,13 +10,11 @@ body{
 }
 
 nav {
-    
-    height: 100dvh;
-    background-image: url(movedo-feature-02-1920x1088.jpg) ;
+    height: 100%;
+    background-image:linear-gradient(to bottom,rgba(0,0,0,.5),rgba(0,0,0,0.9)), url(movedo-feature-02-1920x1088.jpg) ;
     background-position:center right;
     background-size: cover;
 }
-
 
 .logo{
     width: 50%;
@@ -49,9 +47,6 @@ nav {
     font-weight: 600;
 }
 
-
-
-
 .bgcolor{
     background-color: black;
 }
@@ -74,7 +69,6 @@ li a:active{
     padding: 90px;
     color: white;
 }
-
 
 .header-he{
     font-size: 3.5rem;
@@ -167,12 +161,13 @@ li a:active{
 
 .ors_box{
     display: flex;
-    height: 50vh;
+    height: 100%;
 }
 
 .ors_item{
     padding: 60px;
-    background-color: rgba(163, 73, 248, 0.603)
+    border: 1px solid #b26ff7;
+    background-color:#b26ff7;
 }
 
 .ors_item span{
@@ -198,8 +193,6 @@ footer{
     background-color: black;
     color: white;
     height: 80dvh;
-    position:sticky;
-    z-index: -2;
 }
 
 .footer-box{
@@ -232,4 +225,174 @@ footer{
 .foot-li a{
     text-decoration: none;
     color: grey;
+}
+
+.fot-bd{
+    padding: 20px;
+    background-color: black;
+}
+
+
+@media all and (max-width:1024px) {
+
+
+    .ors-text img{
+         width: 290px;
+    }
+}
+
+
+@media all and (max-width:768px){   
+
+
+    .nav-list{
+        display: none;
+    }
+    .navbar{
+        width: 50%;
+        background-color: transparent;
+    }
+
+    .header{
+        height: 100%;
+        
+    }
+
+    .ors-text img{
+        width: 200px;
+   }
+
+   .footer-box{
+    padding: 0;
+    column-gap:80px ;
+    flex-wrap: wrap;
+    background-color: black;
+ }
+
+ .foo-con{
+    padding: 70px;
+ }
+
+
+.fot-bd {
+    margin-top: -10px;
+    padding-bottom: 10px;
+    background-color: black ;
+}
+
+}
+
+@media all and (max-width:426px){
+
+    nav{
+        width: 100%;
+        background-position: center;
+    }
+
+    .header{
+        padding: 60px;
+    }
+
+    .header-he{
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+
+    .osr-box{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .service-content h1{
+        font-size: 25px;
+    }
+
+    .ors-text img{
+        width: 350px;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+
+    .howitworks{
+        flex-direction: column;
+    }
+
+    .ors_text{
+        margin-top: -10px;
+        width: 100%;
+        height: 100%;
+        padding: 0 ;
+        
+        padding-bottom: 10px;
+    }
+
+    .ors_text h1{
+        font-size: 40px;
+        font-weight: 900;
+        width: 90%;
+        padding-left: 20px;
+    }
+
+    .ors_text p{
+        font-size:15px;
+        width: 90%;
+        padding-left: 20px;
+    }
+
+    .ors_bnt{
+        margin: 20px;
+    }
+    .ors_box{
+        flex-direction: column;
+        padding: 0;
+        
+    }
+
+    .ors_item{
+        width: 100%;
+        padding: 0;
+        padding-top: 10px;
+    }
+
+    .ors_item span{
+        font-size: 11px;
+        padding:10px ;
+    }
+
+    .ors_item h1{
+        font-size: 17px;
+        padding: 10px;
+    }
+
+    .ors_item p{
+        font-size: 15px;
+        padding: 10px;
+    }
+    footer{
+        padding: 0;
+        margin: 0;
+        height: 100%;
+    }
+    
+     .footer-box{
+        padding: 0;
+        height: 100%;
+        flex-direction: column;
+        background-color: black;
+     }
+    
+     .foo-con{
+        padding: 70px;
+     }
+    
+    
+    .fot-bd {
+        margin-top: -10px;
+        padding-bottom: 10px;
+        background-color: black ;
+     }
+    
 }
