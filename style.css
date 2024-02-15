@@ -22,7 +22,11 @@ nav {
     background-size: cover;
     background-attachment: fixed;
    
-   
+}
+
+.menu-bar{
+    color: white;
+    display: none;
 }
 
 
@@ -418,6 +422,12 @@ footer{
         padding: 0;
     }
 
+    .menu-bar{
+
+        display: none;
+    }
+
+
     .home2{
         height: 100vh;
     }
@@ -488,12 +498,17 @@ footer{
     }
 } 
 
-@media all and  (min-width:320px) and  ( max-width:426px) {
+@media all and  (min-width:320px) and  ( max-width:425px) {
 
     nav{
         height: 100vh;
         padding: 0;
         margin: 0;
+    }
+
+    .menu-bar{
+
+        display: block;
     }
 
     .logo{
@@ -571,11 +586,10 @@ footer{
 
     .hm-pro-left {
     height: 100%;
-    position: static;
+    width: 100%;
     flex-wrap: nowrap;
     flex-direction: column;
     overflow: visible;
-
     }
 
     .pro-box{
@@ -599,14 +613,40 @@ footer{
     height: 100%;
  }
 
-
- .hm-pro2-right {
-    height: 60vh;
-    width: 90%;
-   padding: 0;
-   margin: 0 auto;
+ .hm-pro1-left img{
+    width: 100%;
  }
 
+
+ .hm-pro2-right-box{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+ .hm-pro2-right{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    
+ }
+
+  .hm-pro2-right h1{
+    font-size: 29px;
+    width: 60%;
+  }
+
+ .hm-pro2-right p{
+    width: 60%;
+    font-size: 15px;
+ }
   .hm-pro2-right h1{
     font-size: 29px;
     padding: 0;
@@ -688,6 +728,12 @@ footer{
         margin: 0;
     }
 
+    .menu-bar{
+
+        display: block;
+    }
+
+
     .logo{
         width: 35%;
     }
@@ -757,6 +803,7 @@ footer{
 
 .hm-pro-left{
     height: 80vh;
+    width: 100%;
     margin: 0 auto ;
 }
 
@@ -777,11 +824,25 @@ footer{
     width: 100%;
  }
 
+
+ .hm-pro2-right-box{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
+ }
+
  .hm-pro2-right{
     width: 100%;
-    padding: 80px;
-    padding-bottom: 40px;
-    height: 100vh;
+    height: 100%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    
  }
 
   .hm-pro2-right h1{
@@ -795,21 +856,22 @@ footer{
  }
 
 .hm-sit{
-height: 100dvh;
-margin-top: 45%;
+height: 100%;
+margin-top: 0;
 margin-bottom: 10%;
+margin: 0 auto;
 
 }
  .hm-sit-box {
- 
     flex-wrap: wrap;
-    margin-left: 2rem;
-    gap: 30px;
+    gap: 50px;
+    margin: 80px;
+    
  }
 
  .hm-sit-det{
-   
-    width: 30%;
+   margin: 10px;
+    width: 40%;
 }
 
  .hm-dig{
